@@ -1,0 +1,144 @@
+/* =======================================================================
+   ProjectCard.scss  |  Card styles + light/dark + responsive tweaks
+   ======================================================================= */
+@import "../../_globalColor";
+
+/* ----- Fallback color variables (in case _globalColor isn’t imported) ---- */
+$cardBackground: #ffffff;
+$cardBackgroundDark: #1e1e1e;
+$textColor: #000000;
+$textColorDark: #ffffff;
+$subTitle: #6c757d;
+$subTitleDark: #bbbbbb;
+
+/* -----------------------------------------------------------------------
+   Card container
+   ----------------------------------------------------------------------- */
+.project-heading {
+  font-size: 56px;
+  font-weight: 400;
+  margin: 0 0 2rem 0;
+  color: $textColor;
+}
+.project-card {
+  background: $cardBackground;
+  border-radius: 12px;
+  width: 300px; /* default desktop width */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+.project-title {
+  color: $titleColor;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 1rem 0 0.5rem;
+  text-align: center;
+}
+
+/* -----------------------------------------------------------------------
+   Image block (top)
+   ----------------------------------------------------------------------- */
+.project-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* -----------------------------------------------------------------------
+   Text area
+   ----------------------------------------------------------------------- */
+.project-details {
+  padding: 1rem;
+}
+
+.project-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 0.4rem 0;
+}
+
+.project-cards-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* or space-between / space-evenly */
+  gap: 2rem; /* spacing between cards */
+  margin-top: 2rem;
+}
+
+/* Optional role line (Founder & CTO, etc.) */
+.project-role {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 0.25rem 0;
+  color: $subTitle;
+}
+
+.project-desc {
+  font-size: 14px;
+  color: $subTitle;
+  margin: 0 0 1rem 0;
+  line-height: 1.4;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: $textColor;
+  font-weight: 500;
+  margin-right: 1rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* -----------------------------------------------------------------------
+   Dark-mode overrides
+   ----------------------------------------------------------------------- */
+.dark-mode {
+  .project-card {
+    background: $cardBackgroundDark;
+  }
+  .project-desc {
+    color: $subTitleDark;
+  }
+  .project-role {
+    color: $subTitleDark;
+  }
+  .project-links a {
+    color: $textColorDark;
+  }
+}
+
+/* -----------------------------------------------------------------------
+   Responsive tweaks
+   ----------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .project-card {
+    width: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    width: 90%; /* full-width on small screens */
+  }
+
+  .project-image {
+    height: 160px;
+  }
+
+  .project-name {
+    font-size: 18px;
+  }
+
+  .project-desc {
+    font-size: 13px;
+  }
+}

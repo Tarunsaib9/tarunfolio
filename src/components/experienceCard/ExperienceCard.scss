@@ -1,0 +1,174 @@
+/* ─────────── ExperienceCard.scss (compact) ─────────── */
+@import "../../_globalColor";
+
+/* ---------- Card shell ---------- */
+.experience-card,
+.experience-card-dark {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  background: $lightBackground2;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+  border: 1px solid $lightBorder1;
+  transition: transform 0.25s ease;
+}
+.experience-card-dark {
+  background: $darkBackground;
+}
+
+.experience-card:hover,
+.experience-card-dark:hover {
+  transform: translateY(-6px);
+}
+
+/* ---------- Banner / logo ---------- */
+.experience-banner {
+  height: 8rem;
+  background: $experienceCardBannerLG;
+  background-size: 150%;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.experience-blurred_div {
+  @extend .experience-banner;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: blur(4px);
+  z-index: 0;
+}
+
+.experience-div-company {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience-text-company {
+  margin: 0;
+  padding: 1.2rem;
+  font: 600 1.1rem $primaryFont;
+  color: $lightBackground1;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.experience-roundedimg {
+  position: absolute;
+  top: 5.3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6.2rem;
+  height: 6.2rem;
+  border-radius: 50%;
+  object-fit: contain;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* ---------- Body ---------- */
+.experience-text-details {
+  padding: 1.2rem 1.2rem 1.6rem;
+  margin-top: 2.8rem;
+  text-align: center;
+}
+
+.experience-text-role {
+  font: 700 1.25rem/1.2 $primaryFont;
+  color: $textColor;
+  margin: 0;
+}
+.experience-text-date {
+  font: 600 0.95rem/1.2 $primaryFont;
+  color: $subTitle;
+  margin: 0.3rem 0 0.9rem;
+}
+
+.experience-text-desc {
+  font-size: 0.9rem;
+  color: $subTitle;
+  margin-bottom: 0.8rem;
+}
+.experience-text-desc.dark-mode-text {
+  color: $subTitleDark !important;
+}
+
+ul {
+  padding-left: 1.1rem;
+  margin: 0;
+}
+li {
+  font-size: 0.9rem;
+  color: $subTitle;
+  margin-bottom: 0.4rem;
+}
+
+.dark-mode {
+  .experience-text-role {
+    color: $textColorDark;
+  }
+  .experience-text-date,
+  li {
+    color: $subTitleDark;
+  }
+}
+
+/* ---------- Responsive tweaks ---------- */
+@media (max-width: 992px) {
+  .experience-text-role {
+    font-size: 1.15rem;
+  }
+  .experience-text-date {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .experience-banner {
+    height: 7.5rem;
+  }
+  .experience-roundedimg {
+    top: 5rem;
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+  .experience-text-details {
+    margin-top: 2.4rem;
+  }
+}
+
+/* ─────────── GLOBAL DESIGN TOKENS ─────────── */
+$primaryFont: "Poppins", "Segoe UI", Helvetica, Arial, sans-serif;
+$brandPrimary: #0068ff;
+$brandSecondary: #00cba9;
+$textColor: #1e1e1e;
+$textColorDark: #f0f0f0;
+$subTitle: #646464;
+$subTitleDark: #b6b6b6;
+$lightBackground1: #ffffff;
+$lightBackground2: #f9f9f9;
+$darkBackground: #1b1b1b;
+$cardBackground: #ffffff;
+$cardBackgroundDark: #262626;
+$lightBorder1: #e1e1e1;
+$educationCardBorder: #dcdcdc;
+$lightBoxShadowDark: rgba(0, 0, 0, 0.08);
+$lightBoxShadowDarker: rgba(0, 0, 0, 0.14);
+$progressBarBackground: #dfe3e6;
+$progressBarSpanBG: $brandPrimary;
+$experienceCardBannerLG: linear-gradient(135deg, #004e92 0%, #000428 100%);
+$experienceCardBlurredDivLG: rgba(0, 0, 0, 0.35);
+$contactDetailHoverTS: rgba(0, 104, 255, 0.4);
+$titleColor: #0068ff;
+$linkColor: $brandPrimary;

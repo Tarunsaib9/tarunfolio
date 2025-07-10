@@ -1,0 +1,138 @@
+@import "../../_globalColor";
+
+/* ---------- Section Wrapper ---------- */
+.experience-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+/* ---------- Heading ---------- */
+.experience-heading {
+  font-size: 56px;
+  font-weight: 400;
+  margin: 0 0 2rem 0;
+  color: $textColor;
+}
+
+.dark-mode .experience-heading {
+  color: $textColorDark;
+}
+
+/* ---------- Card Grid ---------- */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+/* ---------- Experience Card ---------- */
+.experience-card,
+.experience-card-dark {
+  background: $cardBackground;
+  border: 1px solid $lightBorder1;
+  border-radius: 12px;
+  max-width: 350px;
+  width: 100%;
+  padding: 1.5rem 1.2rem;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s ease;
+}
+
+.experience-card-dark {
+  background: $cardBackgroundDark;
+}
+
+.experience-card:hover,
+.experience-card-dark:hover {
+  transform: translateY(-6px);
+}
+
+/* ---------- Logo ---------- */
+.experience-card img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- Text Content ---------- */
+.experience-company {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.experience-role {
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin: 0.3rem 0 0.2rem;
+}
+
+.experience-date {
+  font-size: 0.9rem;
+  color: $subTitle;
+  margin-bottom: 0.5rem;
+}
+
+.experience-desc {
+  font-size: 0.95rem;
+  margin-bottom: 0.6rem;
+}
+
+.experience-bullets {
+  text-align: left;
+  padding-left: 1.2rem;
+  margin: 0.5rem 0 0;
+  list-style-type: disc;
+}
+
+.experience-bullets li {
+  font-size: 0.9rem;
+  color: $subTitle;
+  margin-bottom: 0.4rem;
+}
+
+/* ---------- Dark Mode ---------- */
+.dark-mode {
+  .experience-card {
+    background: $cardBackgroundDark;
+  }
+  .experience-date,
+  .experience-bullets li {
+    color: $subTitleDark;
+  }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1080px) {
+  .experience-heading {
+    font-size: 48px;
+  }
+
+  .experience-card img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-heading {
+    font-size: 36px;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-card {
+    max-width: 90%;
+  }
+}

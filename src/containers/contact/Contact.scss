@@ -1,0 +1,95 @@
+@import "../../_globalColor";
+
+/* ─────────────── Layout ─────────────── */
+.contact-div-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.contact-div-main > * {
+  flex: 1;
+}
+
+/* ─────────────── Titles & Text ─────────────── */
+.contact-title {
+  font-size: 48px; /* ↓ smaller from 65px */
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+  text-align: left;
+}
+
+.contact-subtitle {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $subTitle;
+  margin-bottom: 1rem;
+}
+
+.contact-text-div {
+  margin-top: 1.5rem;
+}
+
+/* ─────────────── Contact Details ─────────────── */
+.contact-detail,
+.contact-detail-email {
+  margin-top: 20px;
+  font-size: 20px; /* ↓ reduced from 40px */
+  font-weight: 400;
+  color: $subTitle;
+  text-decoration: none;
+}
+
+.contact-detail:hover,
+.contact-detail-email:hover {
+  color: $textColor;
+  text-shadow: 2px 1px 2px $contactDetailHoverTS;
+  transition: all 0.3s;
+}
+
+/* ─────────────── Image Section ─────────────── */
+.contact-image-div > img {
+  max-width: 100%;
+  height: auto;
+  margin-left: 1rem;
+  margin-top: -2rem;
+}
+
+/* ─────────────── Dark Mode ─────────────── */
+.dark-mode a {
+  color: $textColorDark;
+}
+
+/* ─────────────── Responsive ─────────────── */
+@media (max-width: 768px) {
+  .contact-div-main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .contact-title {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .contact-subtitle {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .contact-detail,
+  .contact-detail-email {
+    font-size: 18px;
+  }
+
+  .contact-image-div {
+    display: none;
+  }
+}

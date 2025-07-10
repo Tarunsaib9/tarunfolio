@@ -1,0 +1,53 @@
+@import "../../_globalColor"; // <-- Make sure this path is correct for your setup
+
+.projects-main {
+  padding: 2rem 0;
+}
+
+.project-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+
+.project-subtitle {
+  font-size: 18px;
+  color: $subTitle;
+  margin-bottom: 2rem;
+}
+
+.repo-cards-div-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.project-card-wrapper {
+  background: $cardBackground;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.project-card-wrapper:hover {
+  transform: translateY(-4px);
+}
+
+@media (max-width: 1380px) {
+  .project-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .repo-cards-div-main {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}

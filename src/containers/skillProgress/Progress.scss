@@ -1,0 +1,89 @@
+@import "../../_globalColor";
+
+.meter {
+  height: 20px;
+  position: relative;
+  background: $progressBarBackground;
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
+
+.meter > span {
+  display: block;
+  height: 100%;
+  border-radius: 25px;
+  background-color: $progressBarSpanBG;
+  overflow: hidden;
+}
+
+.skill {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.skill-bars {
+  width: 100%;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 4rem auto;
+  padding: 2rem 1rem;
+  min-height: 80vh;
+}
+
+.skills-bar {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.skills-heading {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px;
+}
+
+.skills-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  height: 100%;
+}
+
+.skills-image > div {
+  width: 100%;
+  max-width: 450px;
+  height: 100%;
+}
+
+/* ------------- Responsive ------------- */
+
+@media (max-width: 1024px) {
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    min-height: auto;
+  }
+
+  .skills-bar {
+    padding: 0;
+    width: 100%;
+  }
+
+  .skills-image {
+    margin-top: 2rem;
+    max-width: 320px;
+    width: 100%;
+  }
+
+  .skills-heading {
+    text-align: center;
+  }
+}

@@ -1,0 +1,147 @@
+@import "../../_globalColor";
+
+/* ---------- Layout wrappers ---------- */
+.main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.greet-main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
+/* ---------- Flex row ---------- */
+.greeting-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 85vh; /* was 90vh – slightly shorter hero */
+  flex-wrap: wrap;
+}
+
+.greeting-main > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+/* ---------- Text styles ---------- */
+.subTitle {
+  color: $subTitle !important;
+}
+
+/* ↓ Smaller default sizes so the hero fits on 100 % zoom */
+.greeting-text {
+  font-size: 2.4rem; /* was 2.8rem */
+  line-height: 1.2;
+  color: $textColor !important;
+  margin-bottom: 0.8rem;
+}
+
+.greeting-text-p {
+  font-size: 1.1rem; /* was 1.2rem */
+  line-height: 1.9rem; /* tighter paragraph */
+  max-width: 600px;
+}
+
+/* ---------- Buttons ---------- */
+.button-greeting-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+.download-link-button {
+  text-decoration: none;
+}
+
+/* ---------- Image ---------- */
+.greeting-image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 420px; /* was 500px – slightly smaller */
+  padding: 2rem;
+}
+
+.greeting-image-div > img,
+.greeting-image-div > div {
+  width: 100%;
+  max-width: 420px; /* keep in sync */
+  height: auto;
+}
+
+/* ---------- Misc ---------- */
+.empty-div {
+  margin-bottom: 40px;
+}
+
+/* Wave emoji animation */
+.wave-emoji {
+  animation: wave 1.8s infinite;
+  display: inline-block;
+  transform-origin: 70% 70%;
+}
+@keyframes wave {
+  0%,
+  50%,
+  100% {
+    transform: rotate(0deg);
+  }
+  10%,
+  30% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(12deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1380px) {
+  .greeting-text {
+    font-size: 2rem;
+  }
+  .greeting-text-p {
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .greeting-main {
+    flex-direction: column-reverse;
+    min-height: auto;
+  }
+  .greeting-text {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .greeting-text-p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    text-align: center;
+    margin: auto;
+  }
+  .greeting-image-div {
+    margin-top: 20px;
+    max-width: 320px;
+  }
+  .button-greeting-div {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .main {
+    width: auto;
+  }
+}
