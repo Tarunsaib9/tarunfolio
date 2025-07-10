@@ -22,7 +22,8 @@ Feel free to fork, customise, and deploy your own version!
 
 ## 🌐 Live Demo
 
-**▶️ Visit:** https://tarunsaib9.github.io
+**▶️ Visit:** https://tarunsaib9.github.io/tarunfolio
+
 
 ---
 
