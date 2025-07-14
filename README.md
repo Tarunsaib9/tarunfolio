@@ -2,7 +2,7 @@
 # 🚀 Tarun Bikkunur — Portfolio
 
 <p align="center">
-<img src="C:\Users\tarun\developerFolio\public\publicpreview.gif" alt="Tarun Portfolio Preview" width="100%" />
+<img src="C:\Users\tarun\developerFolio\publicpreviewgif.gif" alt="Tarun Portfolio Preview" width="100%" />
 
 </p>
 
