@@ -2,7 +2,7 @@
 # 🚀 Tarun Bikkunur — Portfolio
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Tarunsaib9/tarunfolio/main/publicpreview.gif" alt="Tarun Portfolio Preview" width="100%" />
+  <img src="https://github.com/Tarunsaib9/tarunfolio/blob/main/public_preview.gif" alt="Tarun Portfolio Preview" width="100%" />
 </p>
 
 <p align="center">
