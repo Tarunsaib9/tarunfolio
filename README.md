@@ -2,15 +2,22 @@
 # 🚀 Tarun Bikkunur — Portfolio
 
 <p align="center">
-<img src="https://github.com/Tarunsaib9/tarunfolio/blob/main/publicpreviewgif.gif" alt="Tarun Portfolio Preview" width="100%" />
-
+  <img src="https://github.com/Tarunsaib9/tarunfolio/blob/main/publicpreviewgif.gif?raw=true" alt="Tarun Portfolio Preview" width="100%" />
 </p>
 
 <p align="center">
-  <a href="https://github.com/Tarunsaib9/tarunsaib9.github.io/stargazers"><img src="https://img.shields.io/github/stars/Tarunsaib9/tarunsaib9.github.io?style=social" /></a>
-  <a href="https://github.com/Tarunsaib9/tarunsaib9.github.io/fork"><img src="https://img.shields.io/github/forks/Tarunsaib9/tarunsaib9.github.io?style=social" /></a>
-  <a href="https://github.com/Tarunsaib9/tarunsaib9.github.io/issues"><img src="https://img.shields.io/github/issues/Tarunsaib9/tarunsaib9.github.io" /></a>
-  <a href="https://github.com/Tarunsaib9/tarunsaib9.github.io/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Tarunsaib9/tarunsaib9.github.io" /></a>
+  <a href="https://github.com/Tarunsaib9/tarunfolio/stargazers">
+    <img src="https://img.shields.io/github/stars/Tarunsaib9/tarunfolio?style=social" />
+  </a>
+  <a href="https://github.com/Tarunsaib9/tarunfolio/fork">
+    <img src="https://img.shields.io/github/forks/Tarunsaib9/tarunfolio?style=social" />
+  </a>
+  <a href="https://github.com/Tarunsaib9/tarunfolio/issues">
+    <img src="https://img.shields.io/github/issues/Tarunsaib9/tarunfolio" />
+  </a>
+  <a href="https://github.com/Tarunsaib9/tarunfolio/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/Tarunsaib9/tarunfolio" />
+  </a>
 </p>
 
 ---
@@ -45,7 +52,7 @@ Feel free to fork, customise, and deploy your own version!
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/Tarunsaib9/tarunsaib9.github.io
+git clone https://github.com/Tarunsaib9/tarunsaib9.github.io/tarunfolio
 cd tarunsaib9.github.io
 
 # 2. Install dependencies
